@@ -13,7 +13,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import dronecontrollerlibandroid.pkg.*;
 
-///test
+///test hyuffuyf
 
 public class MainActivity extends Activity implements CustomEventActivity
 {
