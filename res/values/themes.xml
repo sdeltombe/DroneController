@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<resources>
+    <style name="CustomActionBarTheme"
+           parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+    </style>
+    <style name="MyActionBar"
+           parent="@android:style/Widget.Holo">
+        <item name="android:background">@drawable/background</item>
+    </style>
+</resources>
