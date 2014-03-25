@@ -20,6 +20,7 @@ public class MainActivity extends Activity implements CustomEventActivity
    
     private SPListener myListener; 
     private AndroidUtility utility;
+    private ControllerDialogFragment dialog = new ControllerDialogFragment();
     int nb=0;
      
     /** Called when the activity is first created. */
@@ -41,6 +42,8 @@ public class MainActivity extends Activity implements CustomEventActivity
         DCManager manager = new DCManager(factory,AndroidFactory.SMARTPHONE_TYPE,tab);
         //Lancement du traitement d'ecoute du controller
         manager.run();
+        
+        
     }
     
     public void SetListener(SPListener listener)
@@ -79,6 +82,7 @@ public class MainActivity extends Activity implements CustomEventActivity
             refresh();
             return true;
           case R.id.action_settings:
+            dialog.show(getFragmentManager(),"MyDF");
             //openSettings();
             return true;
         default:
