@@ -36,10 +36,10 @@ public class MainActivity extends Activity implements CustomEventActivity
         utility.SetView(this);
         AndroidFactory factory = new AndroidFactory(utility);
         Object[] tab = new Object[1];
-        tab[0] = (CustomEventActivity)this;
+        tab[0] = (Activity)this;
         //creation du manager en passant en arg la factory et la classe d'utilité
         //DCManager manager = new DCManager(factory,StandardFactory.WIIMOTE_TYPE,tab);
-        DCManager manager = new DCManager(factory,AndroidFactory.SMARTPHONE_TYPE,tab);
+        DCManager manager = new DCManager(factory,AndroidFactory.WIIMOTE_TYPE,tab);
         //Lancement du traitement d'ecoute du controller
         manager.run();
         
